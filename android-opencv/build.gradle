@@ -32,12 +32,11 @@ artifacts {
   archives sourcesJar
 }
 // 签名
-signing {
-  sign configurations.archives
-}
+//signing {
+//  sign configurations.archives
+//}
 
 uploadArchives {
-  /*
   repositories {
     mavenDeployer {
       repository(url: LOCAL_REPO_URL)
@@ -63,7 +62,9 @@ uploadArchives {
         }
       }
     }
-  }*/
+  }
+
+  /*
   repositories {
     mavenDeployer {
       beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
@@ -107,5 +108,5 @@ uploadArchives {
       }
     }
   }
+   */
 }
-
